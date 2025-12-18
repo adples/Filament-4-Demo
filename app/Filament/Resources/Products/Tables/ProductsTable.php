@@ -19,6 +19,7 @@ class ProductsTable
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('price')
+                    ->money('USD', 100)
                     ->sortable()
                     ->searchable(),
             ])
